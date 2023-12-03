@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home" class="dot active" data-scroll="home"><span>Home</span></a></li>
+            <li><a href="#companies" class="dot" data-scroll="companies"><span>Companies</span></a></li>
+            <li><a href="#team" class="dot" data-scroll="team"><span>Team</span></a></li>
+            <li><a href="#contact" class="dot" data-scroll="contact"><span>Contact</span></a></li>
+        </ul>
+    </nav>
+    <section class="main sections" id="home">
+        <header>
+            <a href="#home" data-scroll="home">HOME</a>
+            <ul class="navigation">
+                <li><a href="#companies" data-scroll="companies">IT COMPANIES</a></li>
+                <li><a href="#team" data-scroll="team">TEAM</a></li>
+                <li><a href="#contact" data-scroll="contact">CONTACT</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <span id="left">WE ARE</span>
+            <h2>ITG</h2>
+            <span id="right">A YOUNG TEAM<br>OF DEVELOPERS</span>
+            
+            <a href="#companies" class="btn">LET'S GET STARTED</a>
+        </div>
+    </section>
+    <section class="sections" id="companies"><br><br><br><h1>IT COMPANIES</h1></section>
+    <section class="sections" id="team"><br><br><br><h1>TEAM</h1></section>
+    <section class="sections" id="contact">
+        <br><br><br>
+        <div class="left-section">
+            <h1>CONTACT</h1>
+            <br><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur blanditiis magni in aspernatur nemo adipisci repellendus. Non dicta quisquam assumenda reprehenderit excepturi in iure itaque modi. A, perferendis nisi.</p>
+            <br>
+            <h2>Address: </h2><p>9 Ziyolilar ko'chasi, Toshkent</p>
+            <br>
+            <h2>Phone: </h2><p>+998-33-578-30-78</p>
+            <br>
+            <h2>E-Mail</h2><p>suhaylxd2020@gmail.com</p>
+        </div>
+    </section>
+    
+    <div class="footer">
+        <ul class="sci">
+            <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+        </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(window).on('scroll',function() {
+                var link = $('.navbar a.dot');
+                var top = $(window).scrollTop();
+                $('.sections').each(function() {
+                    var id = $(this).attr('id');
+                    var height = $(this).height();
+                    var offset = $(this).offset().top - 150;
+                    if(top >= offset && top < offset + height){
+                        link.removeClass('active');
+                        $('.navbar').find('[data-scroll="' + id +'"]').addClass('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

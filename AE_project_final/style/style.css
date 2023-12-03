@@ -1,0 +1,296 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+@font-face {
+    font-family: 'Lemon-Milk-bold';
+    src:url('fonts/Lemon-Milk-bold.ttf.woff') format('woff'),
+        url('fonts/Lemon-Milk-bold.ttf.svg#Lemon-Milk-bold') format('svg'),
+        url('fonts/Lemon-Milk-bold.ttf.eot'),
+        url('fonts/Lemon-Milk-bold.ttf.eot?#iefix') format('embedded-opentype'); 
+}
+@font-face {
+    font-family: 'lemonmilkregular';
+    src: url('fonts/lemonmilk-webfont.woff2') format('woff2'),
+         url('fonts/lemonmilk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+:root {
+    --black: #2f2f2f;
+    --white: #fff;
+    --green: #86c232
+}
+.main {
+    position: relative;
+    min-height: 100vh;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 2px;
+}
+header a {
+    position: relative;
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.25s;
+}
+header a:hover {
+    color: var(--green);
+    letter-spacing: 3px;
+}
+.navigation {
+    display: flex;
+}
+.navigation li {
+    list-style: none;
+}
+.navigation li a {
+    position: relative;
+    color: var(--white);
+    margin-left: 40px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+.navigation li a:hover {
+    color: var(--green);
+    letter-spacing: 3px;
+}
+.content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    z-index: 1;
+}
+.content span {
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.content h2 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 13em;
+    font-weight: 700;
+    color: var(--white);
+    text-align: center;
+    letter-spacing: 15px;
+}
+.content p {
+    color: var(--white);
+}
+#left {
+    position: relative;
+    margin-right: 290px;
+}
+#right {
+    position: relative;
+    margin-left: 300px;
+}
+.btn {
+    display: inline-block;
+    background: var(--black);
+    color: var(--white);
+    text-decoration: none;
+    padding: 16px 36px;
+    margin-top: 30px;
+    font-size: 1.25em;
+    transition: 0.25s;
+    letter-spacing: 2px;
+}
+.btn:hover {
+    letter-spacing: 4px;
+    background: var(--green);
+}
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sci {
+    display: flex;
+}
+.sci li {
+    list-style: none;
+}
+.sci li a {
+    color: var(--white);
+    font-size: 2em;
+    margin-right: 20px;
+    transition: 0.25s;
+}
+.sci li a:hover {
+    color: var(--green);
+}
+.dots {
+    display: flex;
+}
+.dots .dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.dots .dot.active {
+    background: var(--green);
+}
+.sections {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 50px 100px;
+    align-items: center;
+    min-height: 100vh;
+}
+.sections p {
+    color: var(--white);
+}
+.sections h1 {
+    color: var(--green);
+}
+.navbar {
+    position: fixed;
+    top: 50%; right: 30px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar ul li {
+    width: 200px;
+    position: relative;
+    text-align: right;
+}
+.navbar ul li .dot {
+    color: #fff;
+    display: block;
+    padding: 5px 0;
+}
+.navbar ul li .dot span {
+    display: inline-block;
+    background: var(--green);
+    letter-spacing: 1px;
+    padding: 10px 25px;
+    margin-right: 30px;
+    border-radius: 5px;
+    transform: translateX(30px);
+    opacity: 0;
+}
+.navbar ul li:hover .dot span {
+    transform: translateX(0px);
+    opacity: 1;
+}
+.navbar ul li .dot span::before {
+    content: '';
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translate(7px, -50%);
+    border-left: 7px solid var(--green);
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    display: block;
+}
+.navbar ul li .dot::before,
+.navbar ul li .dot::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    display: block;
+    transition: .2s ease-out;
+}
+.navbar ul li .dot::before {
+    height: 5px;
+    width: 5px;
+    border: 2px solid var(--white);
+    right: -4px;
+    top: 19px;
+    transform: translateX(-50%);
+}
+.navbar ul li .dot.active::before,
+.navbar ul li:hover .dot::before {
+    border-color: var(--green);
+    background: var(--green);
+}
+.navbar ul li .dot::after {
+    height: 15px;
+    width: 15px;
+    border: 2px solid var(--green);
+    right: -5px;
+    transform: translateY(-50%) scale(0);
+}
+.navbar ul li .dot.active::after,
+.navbar ul li:hover .dot::after {
+    transform: translateY(-50%) scale(1);
+}
+#contact h1 {
+    font-family: 'lemonmilkregular';
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    padding-top: 12%;
+    position: relative;
+    font-size: 3em;
+    letter-spacing: 7px;
+}
+#contact h2 {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.contacts {
+    list-style: none;
+    display: flex;
+}
+.left-section {
+    position: relative;
+    left: 5%;
+    text-align: center;
+    width: 60vh;
+    height: 100vh;
+    display: block;
+    line-height: 35px;
+}
+.left-section p {
+    color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    letter-spacing: 2px;
+}
