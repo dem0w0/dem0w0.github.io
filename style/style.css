@@ -158,7 +158,7 @@ body{
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 50px 100px;
+    padding: 5vh 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -311,11 +311,10 @@ body{
     justify-content: space-evenly;
 }
 .left-section {
-    border: 2px solid white;
     position: relative;
     text-align: center;
-    height: 70vh;
-    width: 40%;
+    width: 65vh;
+    height: 75vh;
     display: block;
     line-height: 35px;
     margin-right: 10%;
@@ -327,19 +326,18 @@ body{
     letter-spacing: 1px;
 }
 .contact-form {
-    border: 2px solid white;
     display: block;
-    width: 40%;
+    width: 65vh;
     text-align: center;
-    height: 70vh;
+    height: 75vh;
     -webkit-box-shadow: -12px 12px 11px 13px rgba(0, 0, 0, 0.22);
     -moz-box-shadow: -12px 12px 11px 13px rgba(0, 0, 0, 0.22);
     box-shadow: -12px 12px 11px 13px rgba(0, 0, 0, 0.22);
 }
 .contact-form input[type=text] {
     width: 75%;
-    padding: 2.5% 1%;
-    margin: 2.5% 0;
+    padding: 1.5vh 1vh;
+    margin: 1.7vh 0;
     box-sizing: border-box;
     background: transparent;
     border: 0px solid;
@@ -357,8 +355,8 @@ body{
     background: rgb(28, 28, 28);
     color: var(--white);
     text-decoration: none;
-    padding: 3% 10%;
-    margin-top: 10%;
+    padding: 2vh 5vh;
+    margin-top: 7vh;
     font-size: 1.25em;
     transition: 0.25s;
     letter-spacing: 3px;
