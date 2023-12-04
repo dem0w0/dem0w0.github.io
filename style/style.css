@@ -292,7 +292,7 @@ body{
     font-family: 'lemonmilkregular';
     color: rgba(255, 255, 255, 0.8);
     font-weight: 500;
-    padding-top: 12%;
+    padding-top: 8vh;
     position: relative;
     font-size: 3em;
     letter-spacing: 7px;
@@ -302,6 +302,7 @@ body{
     color: rgba(255, 255, 255, 0.8);
     font-weight: 700;
     letter-spacing: 3px;
+    margin-top: 3vh;
 }
 .contacts {
     list-style: none;
@@ -318,6 +319,9 @@ body{
     display: block;
     line-height: 35px;
     margin-right: 10%;
+}
+.left-section h1 {
+    margin-bottom: 7vh;
 }
 .left-section p {
     text-align: justify;
