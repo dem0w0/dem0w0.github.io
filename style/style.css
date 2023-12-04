@@ -38,7 +38,7 @@ body{
 :root {
     --black: #2f2f2f;
     --white: #fff;
-    --green: #86c232
+    --green: #86c232;
 }
 .main {
     position: relative;
@@ -355,8 +355,8 @@ body{
     background: rgb(28, 28, 28);
     color: var(--white);
     text-decoration: none;
-    padding: 20px 65px;
-    margin-top: 50px;
+    padding: 3% 10%;
+    margin-top: 10%;
     font-size: 1.25em;
     transition: 0.25s;
     letter-spacing: 3px;
