@@ -311,6 +311,7 @@ body{
     justify-content: space-evenly;
 }
 .left-section {
+    border: 2px solid white;
     position: relative;
     text-align: center;
     height: 70vh;
@@ -326,6 +327,7 @@ body{
     letter-spacing: 1px;
 }
 .contact-form {
+    border: 2px solid white;
     display: block;
     width: 40%;
     text-align: center;
@@ -335,9 +337,9 @@ body{
     box-shadow: -12px 12px 11px 13px rgba(0, 0, 0, 0.22);
 }
 .contact-form input[type=text] {
-    width: 80%;
-    padding: 12px 10px;
-    margin: 22px 0;
+    width: 75%;
+    padding: 2.5% 1%;
+    margin: 2.5% 0;
     box-sizing: border-box;
     background: transparent;
     border: 0px solid;
