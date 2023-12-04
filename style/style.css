@@ -13,7 +13,6 @@
          url('fonts/lemonmilk-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 ::-webkit-scrollbar {
     width: 0px;
@@ -26,6 +25,9 @@ html {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
+}
+*:focus{
+    outline: none;
 }
 body{
     overflow-x: hidden;
@@ -47,7 +49,7 @@ body{
     align-items: center;
     flex-direction: column;
 }
-header{
+.navbar1 {
     position: fixed;
     top: 0;
     left: 0;
@@ -56,16 +58,33 @@ header{
     display: flex;
     justify-content: space-between;
     letter-spacing: 2px;
+    z-index: 999;
 }
-header a {
-    position: relative;
+.navbar1 a {
     color: var(--white);
     text-decoration: none;
+    letter-spacing: 2px;
     transition: 0.25s;
 }
-header a:hover {
+.navbar1 a:hover {
     color: var(--green);
     letter-spacing: 3px;
+}
+.navbar1 ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar1 li {
+    margin-left: 20px;
+}
+.navbar1 li a {
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.25s;
+    margin-left: 20px;
 }
 .navigation {
     display: flex;
@@ -111,7 +130,7 @@ header a:hover {
 }
 #left {
     position: relative;
-    margin-right: 290px;
+    margin-right: 340px;
 }
 #right {
     position: relative;
@@ -119,7 +138,7 @@ header a:hover {
 }
 .btn {
     display: inline-block;
-    background: var(--black);
+    background: rgb(28, 28, 28);
     color: var(--white);
     text-decoration: none;
     padding: 16px 36px;
@@ -127,13 +146,16 @@ header a:hover {
     font-size: 1.25em;
     transition: 0.25s;
     letter-spacing: 2px;
+    -webkit-box-shadow: 12px 12px 11px 2px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 12px 12px 11px 2px rgba(0, 0, 0, 0.35);
+    box-shadow: 12px 12px 11px 2px rgba(0, 0, 0, 0.35);
 }
 .btn:hover {
     letter-spacing: 4px;
     background: var(--green);
 }
 .footer {
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
     padding: 50px 100px;
@@ -183,6 +205,10 @@ header a:hover {
 }
 .sections h1 {
     color: var(--green);
+}
+.navbar li {
+    position: relative;
+    margin-left: 40px;
 }
 .navbar {
     position: fixed;
@@ -272,25 +298,75 @@ header a:hover {
     letter-spacing: 7px;
 }
 #contact h2 {
+    font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 3px;
 }
 .contacts {
     list-style: none;
+}
+.contact-info {
     display: flex;
+    justify-content: space-evenly;
 }
 .left-section {
     position: relative;
-    left: 5%;
     text-align: center;
-    width: 60vh;
-    height: 100vh;
+    height: 70vh;
+    width: 40%;
     display: block;
     line-height: 35px;
+    margin-right: 10%;
 }
 .left-section p {
+    text-align: justify;
+    text-align-last: center;
     color: rgba(255, 255, 255, 0.7);
-    position: relative;
+    letter-spacing: 1px;
+}
+.contact-form {
+    display: block;
+    width: 40%;
+    text-align: center;
+    height: 70vh;
+    -webkit-box-shadow: -12px 12px 11px 13px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: -12px 12px 11px 13px rgba(0, 0, 0, 0.22);
+    box-shadow: -12px 12px 11px 13px rgba(0, 0, 0, 0.22);
+}
+.contact-form input[type=text] {
+    width: 80%;
+    padding: 12px 10px;
+    margin: 22px 0;
+    box-sizing: border-box;
+    background: transparent;
+    border: 0px solid;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    color: var(--white);
     letter-spacing: 2px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.contact-form input[type=text]:focus {
+    border-bottom: 2px solid var(--green);
+}
+.contact-form input[type=button] {
+    display: inline-block;
+    background: rgb(28, 28, 28);
+    color: var(--white);
+    text-decoration: none;
+    padding: 20px 65px;
+    margin-top: 50px;
+    font-size: 1.25em;
+    transition: 0.25s;
+    letter-spacing: 3px;
+    cursor: pointer;
+    border: none;
+    -webkit-box-shadow: 12px 12px 11px 2px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 12px 12px 11px 2px rgba(0, 0, 0, 0.35);
+    box-shadow: 12px 12px 11px 2px rgba(0, 0, 0, 0.35);
+}
+.contact-form input[type=button]:hover {
+    letter-spacing: 5px;
+    background: var(--green);
 }
