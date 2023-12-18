@@ -563,8 +563,8 @@ body{
     width: 75px;
     height: 75px;
     border-radius: 50%;
+    box-shadow: 0px 0px 8px 5px var(--green);
     overflow: hidden;
-    border: 5px solid var(--green);
     transition: 0.7s;
     margin-left: 30%;
 }
@@ -579,9 +579,19 @@ body{
     font-weight: 700;
     position: relative;
     font-size: 12px;
-    margin-top: 10%;
+    margin: 7%;
     text-align: center;
     transition: 0.7s;
+}
+.img p {
+    margin: 5% 2%;
+    color: rgba(255, 255, 255, 0);
+    font-size: 8px;
+    text-align: justify;
+    text-align-last: center;
+    transition: all 0.8s;
+    line-height: 1.5em;
+    letter-spacing: 2px;
 }
 #slider1 {
     position: fixed;
@@ -618,6 +628,7 @@ body{
     top: 0;
     left: 0;
 }
+
 .button:hover{
     background-color: rgba(0, 0, 0, 0.2);
 }
@@ -629,15 +640,20 @@ body{
 }
 #slider1:target ~ .imgContainer #button1 {
     background-color: transparent;
+    box-shadow: 0px 0px 15px 3px var(--green);
 }
 #slider1:target ~ .imgContainer #imgBox1 {
     width: 150px;
     height: 150px;
-    border: 10px solid var(--green);
+    box-shadow: 0px 0px 8px 7px var(--green);
     margin-left: 25%;
 }
 #slider1:target ~ .imgContainer #img1 h2 {
     font-size: 22px;
+}
+#slider1:target ~ .imgContainer #img1 p {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
 }
 #slider2:target ~ .imgContainer #img2,
 #slider2:target ~ .imgContainer #button2{
@@ -647,15 +663,20 @@ body{
 }
 #slider2:target ~ .imgContainer #button2 {
     background-color: transparent;
+    box-shadow: 0px 0px 15px 3px var(--green);
 }
 #slider2:target ~ .imgContainer #imgBox2 {
     width: 150px;
     height: 150px;
-    border: 10px solid var(--green);
+    box-shadow: 0px 0px 8px 7px var(--green);
     margin-left: 25%;
 }
 #slider2:target ~ .imgContainer #img2 h2 {
     font-size: 22px;
+}
+#slider2:target ~ .imgContainer #img2 p {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
 }
 #slider3:target ~ .imgContainer #img3,
 #slider3:target ~ .imgContainer #button3{
@@ -665,15 +686,20 @@ body{
 }
 #slider3:target ~ .imgContainer #button3 {
     background-color: transparent;
+    box-shadow: 0px 0px 15px 3px var(--green);
 }
 #slider3:target ~ .imgContainer #imgBox3 {
     width: 150px;
     height: 150px;
-    border: 10px solid var(--green);
+    box-shadow: 0px 0px 8px 7px var(--green);
     margin-left: 25%;
 }
 #slider3:target ~ .imgContainer #img3 h2 {
     font-size: 22px;
+}
+#slider3:target ~ .imgContainer #img3 p {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
 }
 #slider4:target ~ .imgContainer #img4,
 #slider4:target ~ .imgContainer #button4{
@@ -683,15 +709,20 @@ body{
 }
 #slider4:target ~ .imgContainer #button4 {
     background-color: transparent;
+    box-shadow: 0px 0px 15px 3px var(--green);
 }
 #slider4:target ~ .imgContainer #imgBox4 {
     width: 150px;
     height: 150px;
-    border: 10px solid var(--green);
+    box-shadow: 0px 0px 8px 7px var(--green);
     margin-left: 25%;
 }
 #slider4:target ~ .imgContainer #img4 h2 {
     font-size: 22px;
+}
+#slider4:target ~ .imgContainer #img4 p {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
 }
 #slider5:target ~ .imgContainer #img5,
 #slider5:target ~ .imgContainer #button5{
@@ -701,15 +732,20 @@ body{
 }
 #slider5:target ~ .imgContainer #button5 {
     background-color: transparent;
+    box-shadow: 0px 0px 15px 3px var(--green);
 }
 #slider5:target ~ .imgContainer #imgBox5 {
     width: 150px;
     height: 150px;
-    border: 10px solid var(--green);
+    box-shadow: 0px 0px 8px 7px var(--green);
     margin-left: 25%;
 }
 #slider5:target ~ .imgContainer #img5 h2 {
     font-size: 22px;
+}
+#slider5:target ~ .imgContainer #img5 p {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
 }
 #slider6:target ~ .imgContainer #img6,
 #slider6:target ~ .imgContainer #button6{
@@ -719,15 +755,20 @@ body{
 }
 #slider6:target ~ .imgContainer #button6 {
     background-color: transparent;
+    box-shadow: 0px 0px 15px 3px var(--green);
 }
 #slider6:target ~ .imgContainer #imgBox6 {
     width: 150px;
     height: 150px;
-    border: 10px solid var(--green);
+    box-shadow: 0px 0px 8px 7px var(--green);
     margin-left: 25%;
 }
 #slider6:target ~ .imgContainer #img6 h2 {
     font-size: 22px;
+}
+#slider6:target ~ .imgContainer #img6 p {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
 }
 #slider7:target ~ .imgContainer #img7,
 #slider7:target ~ .imgContainer #button7{
@@ -737,15 +778,20 @@ body{
 }
 #slider7:target ~ .imgContainer #button7 {
     background-color: transparent;
+    box-shadow: 0px 0px 15px 3px var(--green);
 }
 #slider7:target ~ .imgContainer #imgBox7 {
     width: 150px;
     height: 150px;
-    border: 10px solid var(--green);
+    box-shadow: 0px 0px 8px 7px var(--green);
     margin-left: 25%;
 }
 #slider7:target ~ .imgContainer #img7 h2 {
     font-size: 22px;
+}
+#slider7:target ~ .imgContainer #img7 p {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
 }
 #slider1:target ~ .imgContainer{
     left: 60%;
