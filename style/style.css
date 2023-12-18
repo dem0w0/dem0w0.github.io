@@ -582,6 +582,7 @@ body{
     margin: 7%;
     text-align: center;
     transition: 0.7s;
+    letter-spacing: 2px;
 }
 .img p {
     margin: 5% 2%;
